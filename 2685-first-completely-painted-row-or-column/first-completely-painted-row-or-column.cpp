@@ -1,7 +1,7 @@
 class Solution {
 public:
     int firstCompleteIndex(vector<int>& arr, vector<vector<int>>& mat) {
-        map<int,int> idx;
+        unordered_map<int,int> idx;
         for(int i=0;i<arr.size();i++){
             idx[arr[i]]=i;
         }
